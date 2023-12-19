@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.container {
+  max-width: 130rem;
+  margin: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+
+  padding: 2rem;
+}
+.logo img {
+  width: 12.5rem;
+  /* margin-left: 2rem; */
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 2rem;
+  /* margin-right: 2rem; */
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.col_2 {
+  flex-basis: 50%;
+  min-width: 30rem;
+}
+.col_2 img {
+  max-width: 100%;
+  padding: 5rem 0rem;
+}
+
+.col_2 p {
+  font-size: 20px;
+}
+.col_2 small {
+  font-size: 15px;
+}
+.col_2 h1 {
+  line-height: 6rem;
+  font-size: 5rem;
+  margin: 2.5rem 0rem;
+}
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  margin: 3rem 0rem;
+  border-radius: 3rem;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #ab2413;
+}
+
+.header .row {
+  margin-top: 7rem;
+}
+.categaries {
+  margin: 7rem 0rem;
+}
+.col_3 {
+  flex-basis: 30%;
+  min-width: 250px;
+}
+
+.col_3 img {
+  width: 100%;
+}
+.small_container {
+  max-width: 108rem;
+  margin: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.col_3 p {
+  font-size: 35px;
+}
+.col_4 {
+  flex-basis: 25%;
+  padding: 1rem;
+  min-width: 20rem;
+  margin-bottom: 5rem;
+}
+.col_4 h4,
+p {
+  font-size: 15px;
+}
+
+.col_4 img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.col_4 :hover {
+  transform: translateY(-5px);
+}
+.title {
+  text-align: center;
+  margin: 0 auto 8rem;
+  position: relative;
+  line-height: 6rem;
+  color: #555;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  background-color: #ff523b;
+  width: 8rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rating .fa {
+  color: #ff523b;
+}
+.offer {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 8rem;
+  padding: 3rem 0rem;
+}
+.col_2 .offer_img {
+  padding: 5rem;
+}
+small {
+  color: #555;
+}
+/* testimonial_section */
+.testimonial_section {
+  padding-top: 10rem;
+}
+.testimonial_section .col_3 {
+  text-align: center;
+  padding: 4rem 2rem;
+  box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testimonial_section .col_3:hover {
+  transform: translateY(-10px);
+}
+.testimonial_section .col_3 img {
+  width: 5rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+.col_3 p {
+  font-size: 1.2rem;
+  margin: 1.2rem 0rem;
+  color: #777;
+}
+/* --------------brands-------------  */
+.brands {
+  margin: 10rem auto;
+}
+.col_5 {
+  width: 16rem;
+}
+.col_5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.col_5 img:hover {
+  filter: grayscale(0%);
+}
+/* ==================footer =============  */
+.footer {
+  background: black;
+  color: #8a8a8a8a;
+  font-size: 1.4rem;
+  padding: 6rem 0rem 2rem;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.footer_col_1,
+.footer_col_2,
+.footer_col_3,
+.footer_col_4 {
+  min-width: 25rem;
+  margin-bottom: 2rem;
+}
+.footer_col_1 {
+  flex-basis: 30%;
+}
+.footer_col_2 {
+  flex: 1;
+  text-align: center;
+}
+.footer_col_2 img {
+  width: 18rem;
+  margin-bottom: 2rem;
+}
+.footer_col_3,
+.footer_col_4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+.app_logo {
+  margin-top: 2rem;
+}
+.app_logo img {
+  width: 140px;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 0.1rem;
+  margin: 2rem 0rem;
+}
+
+.copyright {
+  text-align: center;
+}
+.menu_icon {
+  width: 2.8rem;
+  margin-left: 2rem;
+  display: none;
+}
+
+/* ================ all product ================  */
+.row_2 {
+  justify-content: space-between;
+  margin: 10rem auto 5rem;
+}
+select {
+  border: 1px solid #ff523b;
+  padding: 0.5rem;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page_btn {
+  margin: 0rem auto 8rem;
+}
+.page_btn span {
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+.page_btn span:hover {
+  background-color: #ff523b;
+  color: #fff;
+}
+
+/* -----------------------single product ----------------  */
+.single_product {
+  margin-top: 8rem;
+}
+.single_product .col_2 img {
+  padding: 0rem;
+}
+.single_product .col_2 {
+  padding: 2rem;
+}
+.single_product h4 {
+  margin: 2rem 0rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.single_product select {
+  display: block;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.single_product input {
+  width: 5rem;
+  height: 4rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  margin-right: 1rem;
+  border: 0.1rem solid #ff523b;
+}
+
+input:focus {
+  outline: none;
+}
+.single_product .fa {
+  color: #ff523b;
+  margin-left: 1rem;
+}
+
+.small_img_row {
+  display: flex;
+  justify-content: space-between;
+}
+.small_img_col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+/* ================chart page ------------------  */
+
+.chart_page {
+  margin: 8rem auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.chart_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.font_up {
+  font-size: 15px;
+}
+.font_ups {
+  font-size: 20px;
+}
+th {
+  text-align: left;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #ff523b;
+  font-weight: normal;
+}
+th {
+  padding: 1rem 0.5rem;
+}
+td input {
+  width: 4rem;
+  height: 3rem;
+  padding: 0.5rem;
+}
+td a {
+  color: #ff523b;
+  font-size: 1.2rem;
+}
+
+td img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+
+.total_price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.total_price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 350px;
+}
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+/* ----------------------acount page --------------  */
+
+.account_page {
+  padding: 5rem 0rem;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.from_containe {
+  background-color: #fff;
+  width: 30rem;
+  height: 40rem;
+  position: relative;
+  text-align: center;
+  padding: 2rem 0rem;
+  margin: auto;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+.from_containe:hover {
+  transform: translateY(-10px);
+}
+.from_containe span {
+  font-weight: bold;
+  padding: 0rem 1rem;
+  color: #555;
+  width: 10rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.from_btn {
+  display: inline-block;
+  font-size: 20px;
+}
+.from_containe form {
+  max-width: 30rem;
+  padding: 0px 2rem;
+  position: absolute;
+  top: 13rem;
+  transition: 1s;
+}
+form input {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0rem;
+  padding: 0rem 1rem;
+  border: 1px solid #ccc;
+}
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0rem;
+}
+form .btn:focus {
+  outline: none;
+}
+#Login_from {
+  left: -30rem;
+}
+#RegForm {
+  left: 0rem;
+}
+form a {
+  font-size: 12px;
+}
+#indicator {
+  width: 10rem;
+  border: none;
+  background-color: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: 1s;
+}
+
+/* =====================media quary start ================  */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  nav ul li a {
+    color: white;
+  }
+  .menu_icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+  .col_2,
+  .col_3,
+  .col_4 {
+    flex-basis: 100%;
+  }
+  .single_product .row {
+    text-align: left;
+  }
+  .single_product .col_2 {
+    padding: 2rem 0rem;
+  }
+  .single_product h1 {
+    font-size: 2.6rem;
+    line-height: 2.2rem;
+  }
+}

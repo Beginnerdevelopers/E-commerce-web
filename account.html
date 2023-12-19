@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Product Red Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./RedStore_Img/images/logo.png " alt=""
+          /></a>
+        </div>
+        <nav>
+          <ul id="menu_item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img
+            src="./RedStore_Img/images/cart.png "
+            alt=""
+            width="30px"
+            height="30px"
+        /></a>
+        <img
+          src="./RedStore_Img/images/menu.png "
+          class="menu_icon"
+          onclick="menutoggle()"
+          alt=""
+          width="30px"
+          height="30px"
+        />
+      </div>
+    </div>
+    <!-- -------------------------account page -----------  -->
+    <div class="account_page">
+      <div class="container">
+        <div class="row">
+          <div class="col_2">
+            <img src="./RedStore_Img/images/image1.png" width="100%" alt="" />
+          </div>
+          <div class="col_2">
+            <div class="from_containe">
+              <div class="from_btn">
+                <span onclick="login()">Login</span>
+                <span onclick="regfrom()">Register</span>
+                <hr id="indicator" />
+              </div>
+              <form action="" id="Login_from">
+                <input type="text" placeholder="UserName" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot Password</a>
+              </form>
+              <form action="" id="RegForm">
+                <input type="text" placeholder="UserName" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="password" />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================foter ==============  -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_col_1">
+            <h3>Download Our App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              delectus facilis ea at repudiandae soluta, reiciendis eum dicta,
+            </p>
+            <div class="app_logo">
+              <img src="./RedStore_Img/images/play-store.png" alt="" />
+              <img src="./RedStore_Img/images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer_col_2">
+            <img src="./RedStore_Img/images/logo-white.png" alt="" />
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              commodi soluta dicta dignissimos excepturi sequi!
+            </p>
+          </div>
+          <div class="footer_col_2">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affliated</li>
+            </ul>
+          </div>
+          <div class="footer_col_2">
+            <h3>Flow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>twiter</li>
+              <li>Instagram</li>
+              <li>YourTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright @Copyright</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let menu_item = document.getElementById("menu_item");
+    menu_item.style.maxHeight = "0px";
+    function menutoggle() {
+      if (menu_item.style.maxHeight === "0px") {
+        menu_item.style.maxHeight = "400px";
+      } else {
+        menu_item.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <!-- -----------------from script---------  -->
+  <script>
+    let Login_from = document.getElementById("Login_from");
+    let RegForm = document.getElementById("RegForm");
+    let indicator = document.getElementById("indicator");
+    function regfrom() {
+      RegForm.style.transform = "translateX(0px)";
+      Login_from.style.transform = "translateX(0px)";
+      indicator.style.transform = " translateX(100px)";
+    }
+
+    function login() {
+      RegForm.style.transform = "translateX(300px)";
+      Login_from.style.transform = "translateX(300px)";
+      indicator.style.transform = " translateX(0px)";
+    }
+  </script>
+</html>
